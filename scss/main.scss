@@ -3,6 +3,17 @@
 
 body {
   background: $primary-color;
-  color: $text-color;
-  font-weight: map-get($font-weights, bold);
+}
+
+.main {
+  width: 80%;
+  margin: 0px auto;
+  #{&}_paragraph {
+    font-weight: map-get($font-weights, bold);
+    color: $text-color;
+
+    &:hover {
+      color: pink;
+    }
+  }
 }

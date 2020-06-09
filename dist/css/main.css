@@ -7,7 +7,19 @@
 
 body {
   background: #272727;
-  color: #fff;
+}
+
+.main {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.main .main_paragraph {
   font-weight: 700;
+  color: #fff;
+}
+
+.main .main_paragraph:hover {
+  color: pink;
 }
 /*# sourceMappingURL=main.css.map */
