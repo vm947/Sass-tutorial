@@ -7,19 +7,50 @@
 
 body {
   background: #272727;
+  color: #fff;
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   margin: 0px auto;
 }
 
-.main .main_paragraph {
+.main .main_paragraph1, .main .main_paragraph2 {
   font-weight: 700;
-  color: #fff;
 }
 
-.main .main_paragraph:hover {
+.main .main_paragraph1:hover, .main .main_paragraph2:hover {
   color: pink;
+}
+
+.main .main_paragraph2:hover {
+  color: #ff652f;
+}
+
+@media (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.light {
+  background: white;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
